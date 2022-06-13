@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花見步道</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 class="logo"><a href="https://www.ccf.org.tw/60">大同育幼院</a></h1>
+            <a class="to_nav" href="#primary_nav"></a>
+        </header>
+    </div>
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h1 class="main-title" id="home">大同育幼院</h1>
+            <p>用愛溫暖 生命的角落</p>
+            <a href="https://www.facebook.com/tfcf60/" class="btn btn-primary">點我打卡</a>
+        </div>
+    </section>
+
+    <nav id="primary_nav">
+        <ul class="menu">
+            <li class="top"><a href="#home">首頁</a></li>
+            <li class="top"><a href="#about">大同十景</a></li>
+            <li class="top"><a href="https://www.ccf.org.tw/60">大同育幼院</a></li>
+            <li class="top"><a href="#contact">聯絡我們</a></li>
+        </ul>
+    </nav>
+
+
+    <section>
+        <img class="mySlides" src="img/A5.jpg" style="display: none; margin: auto;" width="900" height="500" alt="1">
+        <img class="mySlides" src="img/A7.jpg" style="display: block; margin: auto;" width="900" height="500" alt="1">
+        <img class="mySlides" src="img/A6.jpg" style="display: none; margin: auto;" width="900" height="500" alt="1">
+    
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 1.5 seconds
+            }
+        </script>
+    </section>
+    <p>花見步道</p>
+
+    
+</body>
+</html>
