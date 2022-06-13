@@ -1879,3 +1879,27 @@ http://stackoverflow.com/a/34696029/383904
 	color: rgba(0,0,0,0.8);
 	text-decoration: none;
 }
+
+
+.mySlides{
+  display: block;
+  float: left;
+  width: 600px;
+  height: 400px;
+  margin: 30px 10em;
+  margin-right: 0;
+  border-radius: 25px;
+}
+.fl{
+  margin-top: 5em;
+  margin-right: 60px;
+  font-size: 25px;
+  color: rgb(46, 4, 25);
+  text-align: center;
+}
+.fl h1{
+  font-size: 50px;
+  color: rgb(206, 29, 59);
+  font-family: 標楷體;
+  font-weight:bold;
+}
