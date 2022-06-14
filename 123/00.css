@@ -28,7 +28,7 @@ body {
     line-height: 1;
     font: 16px/1.4em 'PT Sans', sans-serif;;
     color: #000000;
-    background-color: #ffffff;
+    background-color: #E7DECD;
     
     margin: auto;
 }
@@ -97,7 +97,7 @@ article {
 }
  
 header {
-    background: #8C1C13;
+    background: #BBD686;
     padding: 15px 20px;
     margin: auto;
 }
@@ -150,13 +150,13 @@ a.to_nav {
  
 a.to_nav:hover,
 a.to_nav:focus {
-    color: #d03434;
+    color: #abc37b;
     background: rgb(255, 255, 255);
 
 }
 #primary_nav ul {
     list-style: none;
-    background: #8C1C13;
+    background: #BBD686;
     padding: 5px 0;
 }
  
@@ -231,7 +231,7 @@ footer {
     list-style-type: none;
     display: inline-block;
     width: 200px;
-    margin: 0 10px;
+    margin: 0 ;
 }
 .menu a {
     
@@ -384,35 +384,6 @@ body {
 }
 
 /* ............//// Showcase styling ////......... */
-
-.showcase-area {
-  height: 50vh;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.578),
-      rgba(221, 221, 221, 0.336)
-    ),
-    url("img/1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.showcase-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-
-.main-title {
-  text-transform: uppercase;
-  margin-top: 1.5em;
-  color: rgb(4, 76, 44);
-  font-size: 2em;
-}
 
 /* ......//about us//...... */
 
@@ -1192,6 +1163,42 @@ body {
 
 /* ............//// Showcase styling ////......... */
 
+.showcase-area {
+  height: 30em;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.578),
+      rgba(221, 221, 221, 0.336)
+    ),
+    url("img/1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 2em;
+}
+
+.main-title {
+  text-transform: uppercase;
+  font-size: 4em;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 5px rgb(35, 100, 26);
+}
+
+.showcase-container p{
+  color: transparent;
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  font-size: 2em;
+  font-family: 標楷體;
+}
+
 /* ......//about us//...... */
 
 #about {
@@ -1696,6 +1703,14 @@ body {
   }
 }
 
+@media (orientation: landscape) and (max-height: 500px) {
+  .showcase-area {
+    height: 50vmax;
+  }
+}
+
+
+
 *{box-sizing: border-box; -webkit-box-sizing: border-box; }
 html, body { height: 80%; }
 body { margin: 0; font: 16px/1.3 sans-serif; }
@@ -1853,20 +1868,21 @@ http://stackoverflow.com/a/34696029/383904
 .mySlides{
   display: block;
   float: left;
-  width: 600px;
-  height: 400px;
-  margin: 30px 10em;
+  width: 800px;
+  height: 900px;
+  margin: 60px 4em;
   margin-right: 3em;
   border-radius: 25px;
 }
 .fl{
-  margin-top: 5em;
+  margin-top: 4em;
+  margin-right: 2em;
   font-size: 25px;
-  color: rgb(11, 86, 103);
+  color: rgb(30, 24, 108);
 }
 .fl h1{
   font-size: 50px;
-  color: rgb(36, 174, 205);
+  color: rgb(0, 39, 211);
   font-family: 標楷體;
   font-weight:bold;
 }
